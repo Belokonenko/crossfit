@@ -1,0 +1,62 @@
+:root {
+  --color-light-0: #fff;
+  
+  --color-dark: #000;
+  --color-dark-0: #404040;
+
+  --color-txt-light: #fff;
+
+  /* --color-accent: #e53935; */
+  /* --color-text-primary: #111111; */
+  /* --color-text-secondary: #555555; */
+  /**/
+  /* --color-primary: #1e88e5; */
+  /* --color-primary-hover: #1565c0; */
+
+  
+
+  --color-border: #dddddd;
+}
+
+/* ==== LOADER ==== */
+.loader {
+  position: fixed;
+  inset: 0;
+  background: #404040;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* ==== LOGO ==== */
+.loader-logo img {
+  width: 120px;
+  height: auto;
+  animation: pulse 1.6s ease-in-out infinite;
+  user-select: none;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.15);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
